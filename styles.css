@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.images {
+  min-width: 750px;
+}
+
+.images header {
+  margin-left: 3.5rem;
+  margin-bottom: 2.5rem;
+  width: 40%;
+}
+
+.images header a img {
+  display: block;
+  width: 55%;
+}
+
+.images .mockup {
+  display: block;
+  width: 85%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details-container .heading {
+  width: 60%;
+}
+
+.details-container .heading h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #F9F9F9;
+  margin-bottom: 1rem;
+}
+
+.details-container .info {
+  width: 80%;
+  font-family: 'Open Sans', sans-serif;
+  color: #F9F9F9;
+  font-weight: 400;
+}
+
+.details-container a {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  color: hsl(257, 40%, 49%);
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1rem;
+  padding: 9px;
+  background-color: #F9F9F9;
+  box-shadow: 4px 2px 4px 1px rgba(0, 0, 0, 0.2);
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.details-container a:focus {
+  outline: none;
+}
+
+.details-container a:hover {
+  color: #F9F9F9;
+  background: #d932ce;
+  background-image: -webkit-linear-gradient(top, #d932ce, #1f3edb);
+  background-image: -moz-linear-gradient(top, #d932ce, #1f3edb);
+  background-image: -ms-linear-gradient(top, #d932ce, #1f3edb);
+  background-image: -o-linear-gradient(top, #d932ce, #1f3edb);
+  background-image: linear-gradient(to bottom, #d932ce, #1f3edb);
+}
+
+footer {
+  display: inline-block;
+  position: absolute;
+  top: 85%;
+  left: 78%;
+}
+
+footer a i {
+  margin: 6px;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+}
+
+footer a i .fb {
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  body {
+    min-width: 50%;
+    overflow: auto;
+    flex-direction: column;
+    background-image: url(images/bg-mobile.svg);
+  }
+
+  .images {
+    min-width: 350px;
+    order: 1;
+  }
+
+  .images .mockup {
+    width: 74%;
+  }
+
+  .images header {
+    margin-top: 33%;
+    margin-bottom: 12%;
+    margin-left: 13%;
+    width: 62%;
+  }
+
+  .details-container {
+    order: 2;
+  }
+
+  .details-container .heading {
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .details-container .heading h1 {
+    font-size: 1.5rem;
+  }
+
+  .details-container .info {
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .details-container a {
+    display: block;
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    order: 3;
+    top: 122%;
+    left: 28%;
+  }
+}
