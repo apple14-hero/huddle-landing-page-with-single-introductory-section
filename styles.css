@@ -6,6 +6,8 @@
 
 body {
   background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   background-color: hsl(257, 40%, 49%);
   font-family: 'Poppins', sans-serif;
   max-width: 100%;
@@ -34,7 +36,7 @@ body {
 
 .images .mockup {
   display: block;
-  width: 85%;
+  max-width: 85%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -44,7 +46,7 @@ body {
   width: 60%;
 }
 
-.details-container .heading h1 {
+.details-container .heading .detail-heading {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.5;
@@ -61,7 +63,7 @@ body {
 
 .details-container a {
   display: inline-block;
-  width: 25%;
+  width: 165px;
   text-align: center;
   color: hsl(257, 40%, 49%);
   text-decoration: none;
@@ -82,11 +84,11 @@ body {
 .details-container a:hover {
   color: #F9F9F9;
   background: #d932ce;
-  background-image: -webkit-linear-gradient(top, #d932ce, #1f3edb);
-  background-image: -moz-linear-gradient(top, #d932ce, #1f3edb);
-  background-image: -ms-linear-gradient(top, #d932ce, #1f3edb);
-  background-image: -o-linear-gradient(top, #d932ce, #1f3edb);
-  background-image: linear-gradient(to bottom, #d932ce, #1f3edb);
+  background: -webkit-linear-gradient(top, #d932ce, #1f3edb);
+  background: -moz-linear-gradient(top, #d932ce, #1f3edb);
+  background: -ms-linear-gradient(top, #d932ce, #1f3edb);
+  background: -o-linear-gradient(top, #d932ce, #1f3edb);
+  background: linear-gradient(to bottom, #d932ce, #1f3edb);
 }
 
 footer {
@@ -142,7 +144,7 @@ footer a i .fb {
     text-align: center;
   }
 
-  .details-container .heading h1 {
+  .details-container .heading .detail-heading {
     font-size: 1.5rem;
   }
 
@@ -166,3 +168,4 @@ footer a i .fb {
     left: 28%;
   }
 }
+
