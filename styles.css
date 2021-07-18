@@ -42,13 +42,10 @@ body {
   margin-right: auto;
 }
 
-.details-container .heading {
-  width: 60%;
-}
-
-.details-container .heading .detail-heading {
+.details-container .detail-heading {
   font-size: 2rem;
   font-weight: 600;
+  width: 60%;
   line-height: 1.5;
   color: #F9F9F9;
   margin-bottom: 1rem;
@@ -138,14 +135,12 @@ footer a i .fb {
     order: 2;
   }
 
-  .details-container .heading {
+  .details-container .detail-heading {
     width: 100%;
     margin-top: 3rem;
     text-align: center;
-  }
-
-  .details-container .heading .detail-heading {
     font-size: 1.5rem;
+
   }
 
   .details-container .info {
@@ -168,4 +163,5 @@ footer a i .fb {
     left: 28%;
   }
 }
+
 
